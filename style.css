@@ -1,0 +1,156 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.hatza-industries {
+  background-color: #1e1d28;
+  padding-bottom: 130px;
+  padding-top: 110px;
+  color: white;
+}
+.subtitle {
+  margin-bottom: 40px;
+  line-height: 1.17;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.section__description {
+  opacity: 0.75;
+  max-width: 693px;
+  width: 82%;
+  line-height: 2.5rem;
+  padding: 0px 45px 0px 0px;
+}
+.industries {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+.industries__item {
+  border: 1px solid #373737;
+
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* flex: 2 3 14%; */
+  min-height: 300px;
+  overflow: hidden;
+  padding: 40px 30px;
+  position: relative;
+  text-decoration: none;
+  transition: background-color 300ms;
+  max-width: 17%;
+  width: 100%;
+}
+
+.industries__item:hover {
+  background-color: #373737;
+}
+
+.industries__icon {
+  height: 52px;
+  margin-bottom: 24px;
+  transition: opacity 300ms;
+  width: auto;
+}
+.industries__title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.industries__block {
+  flex: 1;
+  transition: transform 300ms;
+}
+
+.industries__content {
+  font-size: 0.875rem;
+  line-height: 1.71;
+  /* opacity: 0; */
+  position: absolute;
+  transition: opacity 300ms;
+}
+
+.industries__link {
+  display: flex;
+  justify-content: end;
+  gap: 4px;
+}
+.industries__item:hover .industries__icon {
+  display: none;
+}
+
+/* .industries__link-icon {
+
+} */
+
+.industries__item:hover .industries__icon {
+  opacity: 0;
+}
+
+.industries__item:hover .industries__title {
+  color: white;
+}
+
+.industries__content {
+  margin-top: 10px;
+  font-size: 14px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.industries__item:hover .industries__content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.industries__item:hover .industries__link {
+  color: white;
+}
+
+.industries__item:hover .industries__link-icon {
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  /* fill: black; */
+  border-radius: 50%;
+  background-color: gray;
+}
+.industries__item:hover .industries__content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.industries__content {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(100%);
+}
+@media (max-width: 1440px), (max-height: 768px) {
+  .subtitle {
+    font-size: 2.857rem;
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 927px) and (min-width: 767px) {
+  .industries__item {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 595px) and (min-width: 375px) {
+  .industries__item {
+    max-width: 70%;
+  }
+}
